@@ -1,109 +1,110 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="STATUE - Meme coin and AI image generator on Solana. Upload your image and generate Pixar-style art!" />
-  <meta name="keywords" content="STATUE, meme coin, Solana, AI image generator, Pixar, stable diffusion, crypto" />
-  <meta name="author" content="STATUE Team" />
-  <title>STATUE | Pixar-style AI + Meme Coin on Solana</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #000; color: #fff; }
-    header, nav, section, footer { padding: 20px; }
-    nav { display: flex; justify-content: space-between; align-items: center; background: #111; }
-    nav a { color: #fff; text-decoration: none; margin: 0 10px; font-weight: bold; }
-    .menu { display: flex; gap: 15px; }
-    .hero { text-align: center; padding: 40px 20px; }
-    .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
-    .hero a { color: #00f0ff; text-decoration: underline; }
-    .section-title { font-size: 1.8em; margin-bottom: 15px; }
-    .image-upload { text-align: center; margin-top: 30px; }
-    .team-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; text-align: center; }
-    .team-member img { width: 80px; height: 80px; border-radius: 50%; }
-    .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin-bottom: 10px; }
-    .contact-form button { padding: 10px 20px; background: #00f0ff; border: none; color: #000; font-weight: bold; }
-    footer { text-align: center; padding: 20px 10px; background: #111; }
-    @media (max-width: 768px) {
-      .team-grid { grid-template-columns: 1fr; }
-      nav { flex-direction: column; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="STATUE - Upload an image to generate AI art with Stable Diffusion and join the STATUE meme coin revolution on Solana.">
+    <meta name="keywords" content="STATUE, meme coin, AI image generation, Stable Diffusion, Solana, cryptocurrency">
+    <meta name="author" content="STATUE Team">
+    <meta property="og:title" content="STATUE - AI Art & Meme Coin">
+    <meta property="og:description" content="Create AI-generated art and invest in STATUE, the ultimate meme coin on Solana.">
+    <meta property="og:image" content="https://yourdomain.com/images/statue-og.jpg">
+    <meta property="og:url" content="https://yourdomain.com">
+    <title>STATUE - AI Art & Meme Coin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <nav>
-    <div><strong>STATUE</strong></div>
-    <div class="menu">
-      <a href="#home">HOME</a>
-      <a href="#roadmap">ROADMAP</a>
-      <a href="#team">TEAM</a>
-    </div>
-  </nav>  <section class="hero" id="home">
-    <h1>STATUE: Pixar-style AI Art + Meme Coin</h1>
-    <p>Upload your image to generate Pixar-style avatars and join the movement on Solana.</p>
-    <p><strong>CA:</strong> BFnuYJthUHEtmUYGrxQUmPRXEorhijs6M2tgnMMzpump</p>
-    <div class="image-upload">
-      <form id="upload-form">
-        <input type="file" accept="image/*" required />
-        <button type="submit">Generate Image</button>
-      </form>
-    </div>
-    <p><a href="https://raydium.io" target="_blank">Buy STATUE Token</a></p>
-    <p><a href="https://x.com/Statueonsol" target="_blank">Follow us on X</a> | <a href="https://t.me/statuesol" target="_blank">Join Telegram</a></p>
-  </section>  <section id="roadmap">
-    <h2 class="section-title">ROADMAP</h2>
-    <ul>
-      <li>Q1: Concept & Design, Website Launch</li>
-      <li>Q2: Meme Coin Launch on Solana</li>
-      <li>Q3: Stable Diffusion Integration</li>
-      <li>Q4: NFT Avatar Launch + CEX Listings</li>
-    </ul>
-  </section>  <section id="team">
-    <h2 class="section-title">TEAM</h2>
-    <div class="team-grid">
-      <div class="team-member">
-        <img src="https://via.placeholder.com/80" alt="Team 1">
-        <p>@team1</p>
-        <p>“Build relentlessly.”</p>
-        <a href="https://x.com/team1">X Profile</a>
-      </div>
-      <div class="team-member">
-        <img src="https://via.placeholder.com/80" alt="Team 2">
-        <p>@team2</p>
-        <p>“Creativity meets code.”</p>
-        <a href="https://x.com/team2">X Profile</a>
-      </div>
-      <div class="team-member">
-        <img src="https://via.placeholder.com/80" alt="Team 3">
-        <p>@team3</p>
-        <p>“Make it viral.”</p>
-        <a href="https://x.com/team3">X Profile</a>
-      </div>
-    </div>
-  </section>  <section>
-    <h2 class="section-title">Collaborate With Us</h2>
-    <form class="contact-form" action="mailto:youremail@example.com" method="POST" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Proposal" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>  <footer>
-    <p>© 2025 STATUE. All rights reserved.</p>
-  </footer>  <script>
-    document.getElementById('upload-form').addEventListener('submit', async function(e) {
-      e.preventDefault();
-      const formData = new FormData();
-      const fileInput = e.target.querySelector('input[type="file"]');
-      formData.append('image', fileInput.files[0]);
-      const response = await fetch('https://your-stable-diffusion-api.com/generate', {
-        method: 'POST',
-        body: formData
-      });
-      const result = await response.blob();
-      const url = URL.createObjectURL(result);
-      const img = document.createElement('img');
-      img.src = url;
-      img.style.maxWidth = '100%';
-      document.querySelector('.image-upload').appendChild(img);
-    });
-  </script></body>
+    <header>
+        <div class="logo">STATUE</div>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul class="nav-menu">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#roadmap" onclick="toggleMenu()">Roadmap</a></li>
+                <li><a href="#team" onclick="toggleMenu()">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to STATUE</h1>
+            <p>Create stunning AI art with Stable Diffusion and join the <a href="https://dexscreener.com/solana/BFnuYJthUHEtmUYGrxQUmPRXEorhijs6M2tgnMMzpump" target="_blank">STATUE meme coin</a> revolution!</p>
+            <div class="social-links">
+                <a href="https://t.me/statuesol" target="_blank">Telegram</a> |
+                <a href="https://x.com/Statueonsol" target="_blank">X</a>
+            </div>
+            <div class="image-generator">
+                <h2>Generate AI Art</h2>
+                <input type="file" id="imageInput" accept="image/*">
+                <button onclick="generateImage()">Generate Image</button>
+                <div id="generatedImage"></div>
+            </div>
+            <p>Buy STATUE Meme Coin: <a href="https://dexscreener.com/solana/BFnuYJthUHEtmUYGrxQUmPRXEorhijs6M2tgnMMzpump" target="_blank">CA: BFnuYJthUHEtmUYGrxQUmPRXEorhijs6M2tgnMMzpump</a></p>
+        </section>
+
+        <section id="roadmap">
+            <h2>Roadmap</h2>
+            <div class="roadmap-item">
+                <h3>Phase 1: Launch</h3>
+                <p>Token creation, website launch, community building on Telegram and X, initial DEX listing.</p>
+            </div>
+            <div class="roadmap-item">
+                <h3>Phase 2: Growth</h3>
+                <p>Marketing campaigns, influencer partnerships, AI art contests, CEX listings.</p>
+            </div>
+            <div class="roadmap-item">
+                <h3>Phase 3: Expansion</h3>
+                <p>NFT integration, AI art marketplace, global community events, charitable initiatives.</p>
+            </div>
+            <div class="roadmap-item">
+                <h3>Phase 4: Dominance</h3>
+                <p>Cross-chain compatibility, major brand collaborations, STATUE ecosystem development.</p>
+            </div>
+        </section>
+
+        <section id="team">
+            <h2>Team</h2>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Team Member 1">
+                <h3>ArtMaster</h3>
+                <p><a href="https://x.com/artmaster_sol" target="_blank">@ArtMaster</a></p>
+                <p>"Art is the soul of innovation."</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Team Member 2">
+                <h3>CoinWizard</h3>
+                <p><a href="https://x.com/coinwizard_sol" target="_blank">@CoinWizard</a></p>
+                <p>"Meme coins are the future of fun finance."</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Team Member 3">
+                <h3>TechGuru</h3>
+                <p><a href="https://x.com/techguru_sol" target="_blank">@TechGuru</a></p>
+                <p>"Code creates possibilities."</p>
+            </div>
+        </section>
+
+        <section id="collaboration">
+            <h2>Collaborate with Us</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Proposal:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 STATUE. All rights reserved.</p>
+        <p><a href="https://t.me/statuesol" target="_blank">Telegram</a> | <a href="https://x.com/Statueonsol" target="_blank">X</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
