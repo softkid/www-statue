@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
 
 * {
     margin: 0;
@@ -9,14 +9,14 @@
 }
 
 body {
-    background: linear-gradient(135deg, #1e1e2f 0%, #2a2a4a 100%);
+    background: #1e1e2f; /* Solid dark background for clarity */
     color: #fff;
     line-height: 1.6;
     overflow-x: hidden;
 }
 
 header {
-    background: linear-gradient(90deg, #ff6f61, #ffb88c);
+    background: #2a2a4a; /* Darker, solid header for contrast */
     padding: 1.5rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -24,16 +24,16 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .logo {
     font-size: 2rem;
-    font-weight: 700;
-    color: #fff;
+    font-weight: 800;
+    color: #ffd700; /* Gold for vibrancy */
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
 }
 
 .nav-menu {
@@ -47,10 +47,10 @@ header {
     position: absolute;
     top: 70px;
     right: 2rem;
-    background: rgba(30, 30, 47, 0.95);
+    background: #2a2a4a;
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 111, 97, 0.5);
+    box-shadow: 0 0 15px rgba(255, 111, 97, 0.4);
     animation: slideIn 0.3s ease-in-out;
 }
 
@@ -63,12 +63,11 @@ header {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
-    transition: color 0.3s, text-shadow 0.3s;
+    transition: color 0.3s;
 }
 
 .nav-menu a:hover {
-    color: #ff6f61;
-    text-shadow: 0 0 10px #ff6f61;
+    color: #ff6f61; /* Coral for hover */
 }
 
 .hamburger {
@@ -91,6 +90,9 @@ main {
 section {
     padding: 3rem 0;
     text-align: center;
+    background: rgba(255, 255, 255, 0.05); /* Subtle background for readability */
+    margin: 1rem 0;
+    border-radius: 10px;
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -101,23 +103,23 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3rem;
-    background: linear-gradient(45deg, #ff6f61, #ffd700);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 15px rgba(255, 111, 97, 0.7);
+    font-size: 2.8rem;
+    color: #fff; /* Solid white for readability */
+    font-weight: 800;
+    text-shadow: 0 0 8px rgba(255, 111, 97, 0.5);
 }
 
 h2 {
-    font-size: 2.2rem;
-    color: #ffd700;
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    font-size: 2rem;
+    color: #ffd700; /* Gold for emphasis */
+    font-weight: 600;
 }
 
 p {
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
     color: #e0e0e0;
+    font-weight: 400;
 }
 
 a {
@@ -139,7 +141,11 @@ a:hover {
 .social-links a {
     margin: 0 1rem;
     font-size: 1.2rem;
-    text-shadow: 0 0 5px #ff6f61;
+    color: #ff6f61;
+}
+
+.social-links a:hover {
+    color: #ffd700;
 }
 
 .image-generator {
@@ -147,7 +153,7 @@ a:hover {
     background: rgba(255, 255, 255, 0.1);
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255, 111, 97, 0.3);
+    box-shadow: 0 0 15px rgba(255, 111, 97, 0.3);
 }
 
 .image-generator input, .image-generator button {
@@ -165,7 +171,7 @@ a:hover {
 }
 
 .image-generator button {
-    background: linear-gradient(45deg, #ff6f61, #ffb88c);
+    background: #ff6f61; /* Solid coral button */
     color: #fff;
     font-weight: 600;
     cursor: pointer;
@@ -173,8 +179,8 @@ a:hover {
 }
 
 .image-generator button:hover {
-    background: linear-gradient(45deg, #ffd700, #ff6f61);
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+    background: #ffd700; /* Gold on hover */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
     transform: translateY(-2px);
 }
 
@@ -187,11 +193,11 @@ a:hover {
 }
 
 .roadmap-item {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.1);
     padding: 1.5rem;
     margin: 1.5rem 0;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 111, 97, 0.2);
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.2);
     transition: transform 0.3s;
 }
 
@@ -206,13 +212,13 @@ a:hover {
     background: rgba(255, 255, 255, 0.1);
     padding: 1.5rem;
     border-radius: 15px;
-    box-shadow: 0 0 15px rgba(255, 111, 97, 0.3);
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .team-member:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(255, 111, 97, 0.5);
+    box-shadow: 0 0 20px rgba(255, 111, 97, 0.5);
 }
 
 .team-member img {
@@ -228,7 +234,7 @@ form {
     background: rgba(255, 255, 255, 0.1);
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255, 111, 97, 0.3);
+    box-shadow: 0 0 15px rgba(255, 111, 97, 0.3);
 }
 
 form label {
@@ -250,7 +256,7 @@ form input, form textarea {
 }
 
 form button {
-    background: linear-gradient(45deg, #ff6f61, #ffb88c);
+    background: #ff6f61;
     color: #fff;
     padding: 0.75rem 1.5rem;
     border: none;
@@ -261,18 +267,18 @@ form button {
 }
 
 form button:hover {
-    background: linear-gradient(45deg, #ffd700, #ff6f61);
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+    background: #ffd700;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
     transform: translateY(-2px);
 }
 
 footer {
-    background: linear-gradient(90deg, #ff6f61, #ffb88c);
+    background: #2a2a4a; /* Solid footer */
     color: #fff;
     text-align: center;
     padding: 1.5rem;
     margin-top: 3rem;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
 }
 
 footer p {
